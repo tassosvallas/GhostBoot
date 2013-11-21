@@ -1,0 +1,218 @@
+/*##########################################
+	      Reset and Imports
+############################################*/
+
+
+@import "reset.css";
+@import "bootstrap.css";
+@import "post.css";
+@import "font-awesome.min.css";
+
+
+/*##########################################
+	     General Styles
+############################################*/
+body {
+	background:#efefef url(/assets/css/img/bg-5.png);
+	color: #5C6767;
+    font-family: 'Roboto Slab',Georgia,'Times New Roman',serif;
+	font-size:1.4em;
+}
+a {
+	color:#4C4C3D;
+}
+a:hover {
+	color:#1b7a70;
+}
+#site-header {
+	padding-top:70px;
+	margin-top: 2%;
+	background:#efefef url(/assets/css/img/bg-siel.png);
+	border-bottom:2px ridge #1b7a70;
+}
+#site-header a {
+	color:#FFFFDB;
+}
+#site-header a:hover {
+	color:#E6FFFA;
+	text-decoration:none;
+}
+#site-nav {
+	background:#efefef url(/assets/css/img/bg-siel.png);
+	border-bottom:1px solid #32877E;
+}
+#site-nav a {
+	color:#FFFFDB;
+}
+#site-nav a:hover {
+	color:#E6FFFA;
+	text-decoration:none;
+}
+.navbar-toggle {
+	background-color:#FFFFDB;
+}
+#site-front-container {
+	max-width:80%;
+	width:1170px;
+	margin:auto;
+}
+#site-footer {
+	background:#efefef url(/assets/css/img/bg-siel.png);
+	padding:30px;
+	border-top:2px ridge #1b7a70;
+}
+
+hr {
+	height: 30px;
+	border-style: solid;
+	border-color: #D1E4E2; 
+	border-width: 1px 0 0 0;
+	border-radius: 20px;
+}
+hr:before {
+	 display: block;
+	 content: ""; 
+	 height: 30px;
+	 margin-top: -31px;
+	 border-style: solid;
+	 border-color: #D1E4E2;
+	 border-width: 0 0 1px 0;
+	 border-radius: 20px;
+}
+pre {
+ white-space: pre-wrap;       /* css-3 */
+ white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+ white-space: -pre-wrap;      /* Opera 4-6 */
+ white-space: -o-pre-wrap;    /* Opera 7 */
+ word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+/*##########################################
+	      Rosponsive image
+############################################*/
+
+/*---Responsive Images & author Avatar  at Post----*/
+#article-container img {
+	height:auto;
+	width:100%;
+}
+
+
+#avatar-theme img {
+	height:auto;
+	width:16%;
+}
+
+/*############################################
+	     Article Front
+##############################################*/
+#article-container a {
+	text-decoration:none;
+}
+
+.main-header a {
+	text-decoration:none;
+}
+#article-container {
+	padding:10px;
+	font-size: 1.9rem;
+}
+#site-article-footer {
+	color:#1b7a70;
+	padding:15px;
+	border-radius:5px;
+}
+#site-article-footer a {
+	color:#1b7a70;
+}
+#site-article-footer a:hover {
+	color:#E6FFFA;
+}
+
+/*############################################
+	     Social Icons Header
+##############################################*/
+#site-social-icons {
+	padding:25px 0px 10px;
+}
+#site-social-icons i {
+	margin:3px;
+}
+
+
+
+
+
+/*############################################
+	             Tags
+##############################################*/
+#site-tags {
+	color: #777;
+    font: 9px verdana;
+    text-transform: uppercase;
+    transition: border-color .218s;
+    background: #f4f4f4;
+    background: -webkit-gradient(linear, 0% 40%, 0% 70%, from(#F5F5F5), to(#F1F1F1));
+    display: inline-block;
+    text-shadow: 0 1px 0 #fff;
+    -webkit-transition: border-color .218s;
+    -moz-transition: border .218s;
+    -o-transition: border-color .218s;
+    transition: border-color .218s;
+    background: #f3f3f3;
+    background: -webkit-gradient(linear, 0% 40%, 0% 70%, from(#F5F5F5), to(#F1F1F1));
+    background: -moz-linear-gradient(linear, 0% 40%, 0% 70%, from(#F5F5F5), to(#F1F1F1));
+    border: solid 1px #1b7a70;
+    border-radius: 5px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    margin: 4px 4px 10px 1px;
+    padding: 3px 5px;
+    text-decoration: none;
+	float:right;
+
+}
+#site-tags:hover {
+	border: solid 2px #8DBCB8;
+}
+
+
+/*############################################
+	            Footer
+##############################################*/
+#site-footer {
+	color:#5FA29B;
+}
+#site-footer a {
+	color:#FFFFDB;
+}
+#site-footer a:hover {
+	text-decoration:none;
+	color:#E6FFFA;
+}
+
+
+
+
+/*############################################
+	     Pagination
+##############################################*/
+.page-number {
+	padding-left:10px;
+	padding-right:10px;
+}
+
+
+
+
+/*############################################
+	          Author
+##############################################*/
+#site-front-author {
+    bottom: 15%;
+	top:32%;
+    max-width:50%;
+    padding:5px;
+    margin:auto;
+ 
+}
+
