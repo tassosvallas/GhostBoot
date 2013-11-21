@@ -11,7 +11,7 @@ ga('send', 'pageview');
 
 // Disqus comments
 
-var disqus_shortname = 'metacotta';
+var disqus_shortname = 'username';
 
 function loadDisqus() {
 
