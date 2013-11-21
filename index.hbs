@@ -1,0 +1,56 @@
+{{!< default}}
+{{> header}}
+
+<main id="main" class="container center-block" role="main">
+{{#foreach posts}}	<!--Start the loop-->
+
+	{{#if @first}}	<!--And when in view of only the first post-->
+<div id="site-front-container" class="row">
+<div id="site-front-author" class="col-md-3 hidden-xs hidden-sm affix">
+	<div class="col-md-6">
+	{{> author}}  <!--show the author spatial file-->
+	</div>
+</div>
+	
+<div class="col-md-9 pull-right">	
+	{{/if}} <!--before the first post ends-->
+<article role="article" id="article-container">
+<header>
+<h1><a href="{{{url}}}">{{title}}</a></h1>
+	<div class="clearfix">
+{{#if tags}}
+<div id="site-tags">
+<span><i class="fa fa-tags fa-lg"></i></span> {{tags separator=" , "}}
+</div>
+{{/if}}
+<i class="fa fa-calendar fa-lg"><time datetime="{{date format="DD MMM YYYY"}}">
+<span></span> 
+{{date format='DD MMM YYYY'}}
+</time></i>
+	</div>
+</header>
+<div>
+<p>{{content words="20"}} &hellip; {{excerpt}} &hellip; <a href="{{{url}}}">Read More</a></p>
+</div>
+</article>
+<footer>
+<div id="site-article-footer" class="container">
+ <p>Share:</p>
+ <a href="http://www.facebook.com/sharer.php?u={{url absolute="true"}}" target="_blank"><span><i class="fa fa-facebook-square fa-2x"></i></span></a> 
+ <a href="http://twitter.com/share?text={{title}}&url={{url absolute="true"}}" target="_blank"><span><i class="fa fa-twitter-square fa-2x"></i></span></a> 
+ <a href="https://plus.google.com/share?url={{url absolute="true"}}" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i><span></span></a>
+</div>
+</footer>
+	<br>
+	<hr>
+{{/foreach}}
+</div>	<!--col-md-9-->
+</div>	<!--row-->	
+	
+{{#if pagination}}
+<div class="text-center">
+{{{pagination}}}
+</div>
+{{/if}}
+</main>
+{{> footer}}
