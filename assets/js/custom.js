@@ -25,4 +25,4 @@ function loadDisqus() {
 
 // Fit Video
 
- $("#article-container").fitVids();
+ $("#article-container, iframe").fitVids();
