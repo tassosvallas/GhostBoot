@@ -32,6 +32,12 @@ a:hover {
 }
 #site-header a {
 	color:#FFFFDB;
+	position: relative;
+    display: table;
+    width: 100%;
+    height: 100%;
+    background: no-repeat center center;
+    background-size: cover;
 }
 #site-header a:hover {
 	color:#E6FFFA;
