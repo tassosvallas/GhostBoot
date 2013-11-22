@@ -3,7 +3,7 @@ GhostBoot
 
 A bootstrap ghost theme
 
-Demo http://entity-thetathames.rhcloud.com/
+Demo http://nodejs-thetathames.rhcloud.com/
 
 Work in progress...
 
